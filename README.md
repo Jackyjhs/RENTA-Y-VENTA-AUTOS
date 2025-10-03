@@ -1,6 +1,10 @@
 # RENTA-Y-VENTA-AUTOS
 Creación de un sistema para el Registro de Renta  y venta de autos, donde se debe de Llevar control de venta y renta carros, sucursales, anticipo, depreciación, roles de usuario, factura, 
 
+create database RENTA_Y_VENTA_DE_AUTOS;
+	
+use RENTA_Y_VENTA_DE_AUTOS;
+
 CREATE TABLE Administrador (
 	ID_Administrador int not null identity primary key,
 	genero char(1) not null,
