@@ -62,6 +62,16 @@ fecha_ingreso DATETIME NOT NULL,
 color VARCHAR (30)NOT NULL,
 
 );
+
+CREATE TABLE Clientes (
+    id_cliente INT  PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    dui_nit VARCHAR(20) UNIQUE,
+    telefono VARCHAR(15),
+    direccion VARCHAR(150),
+    correo VARCHAR(100)
+);
+
 CREATE TABLE VentasAutos (
     id_venta INT  PRIMARY KEY,
     id_cliente INT,
