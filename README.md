@@ -46,3 +46,15 @@ CREATE TABLE Usuario_Roles (
     FOREIGN KEY (usuario_id) REFERENCES Usuarios(usuario_id),
     FOREIGN KEY (rol_id) REFERENCES Roles(rol_id)
 	);
+
+CREATE TABLE carros (
+id_carro INT PRIMARY KEY IDENTITY(1,1)NOT NULL,
+marca VARCHAR (50)NOT NULL,
+modelo VARCHAR (50)NOT NULL,
+año DATETIME NOT NULL,
+precio DECIMAL (1,1)NOT NULL,
+disponible VARCHAR (50)NOT NULL,
+fecha_ingreso DATETIME NOT NULL,
+color VARCHAR (30)NOT NULL,
+
+);
