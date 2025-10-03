@@ -2,7 +2,7 @@
 Creación de un sistema para el Registro de Renta  y venta de autos, donde se debe de Llevar control de venta y renta carros, sucursales, anticipo, depreciación, roles de usuario, factura, 
 
 CREATE TABLE Administrador (
-	ID_Paciente int not null identity primary key,
+	ID_Administrador int not null identity primary key,
 	genero char(1) not null,
 	DocumentoIdentificacion varchar(100),
 	nombreCompleto varchar(100) not null,
@@ -12,7 +12,7 @@ CREATE TABLE Administrador (
 );
 
 CREATE TABLE Vendedor (
-	ID_Paciente int not null identity primary key,
+	ID_vendedor int not null identity primary key,
 	genero char(1) not null,
 	DocumentoIdentificacion varchar(100),
 	nombreCompleto varchar(100) not null,
@@ -22,7 +22,7 @@ CREATE TABLE Vendedor (
 );
 
 CREATE TABLE Cliente (
-	ID_Paciente int not null identity primary key,
+	ID_Cliente int not null identity primary key,
 	genero char(1) not null,
 	DocumentoIdentificacion varchar(100),
 	nombreCompleto varchar(100) not null,
