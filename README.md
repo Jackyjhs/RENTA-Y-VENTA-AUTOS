@@ -63,6 +63,19 @@ color VARCHAR (30)NOT NULL,
 
 );
 
+CREATE TABLE sucursales (
+id_sucursal INT PRIMARY KEY IDENTITY (1,1)NOT NULL,
+nombre VARCHAR (100) NOT NULL,
+direccion VARCHAR (255) NOT NULL,
+ciudad VARCHAR (255) NOT NULL,
+estado_provincia VARCHAR(100) NOT NULL,
+codigo_postal VARCHAR(20)NOT NULL,
+pais VARCHAR (100) NOT NULL,
+telefono VARCHAR (20) NOT NULL,
+gerente_id INT NOT NULL,
+
+);
+
 CREATE TABLE Clientes (
     id_cliente INT  PRIMARY KEY,
     nombre VARCHAR(100) NOT NULL,
