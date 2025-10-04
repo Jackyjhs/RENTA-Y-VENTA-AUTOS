@@ -1,0 +1,5 @@
+﻿CREATE TABLE Usuarios ( ID_Usuario INT NOT NULL IDENTITY PRIMARY KEY, 
+FK_RolID INT NOT NULL, DocumentoIdentificacion VARCHAR(20) UNIQUE, 
+nombreCompleto VARCHAR(100) NOT NULL, Telefono VARCHAR(15), Direccion VARCHAR(150),
+Email VARCHAR(100), contrasena_hash VARCHAR(100) NOT NULL FOREIGN KEY (FK_RolID) 
+REFERENCES Roles(rol_id) );

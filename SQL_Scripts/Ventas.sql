@@ -1,0 +1,6 @@
+﻿CREATE TABLE Ventas ( ID_Venta INT NOT NULL IDENTITY PRIMARY KEY, 
+FK_ClienteID INT NOT NULL, FK_UsuarioID INT NOT NULL, 
+FK_PlacaCarro VARCHAR(10) UNIQUE,Fecha_Venta DATE NOT NULL, 
+Precio_Final DECIMAL(10,2) NOT NULL, Anticipo DECIMAL(10,2), 
+Metodo_Pago VARCHAR(30), FOREIGN KEY (FK_ClienteID) REFERENCES Clientes(ID_Cliente), FOREIGN KEY 
+(FK_UsuarioID) REFERENCES Usuarios(ID_Usuario), FOREIGN KEY (FK_PlacaCarro) REFERENCES Carros(Placa) );
